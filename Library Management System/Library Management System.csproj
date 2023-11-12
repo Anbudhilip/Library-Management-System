@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75E0AC3D-2B31-49B8-A05D-93FE1378BFD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LIBRARY_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>LIBRARY MANAGEMENT SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Book.Designer.cs">
+      <DependentUpon>Add Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Students.Designer.cs">
+      <DependentUpon>Add Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.cs">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book Info.Designer.cs">
+      <DependentUpon>Book Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Issue_and_Return_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Issue_and_Return_Register.Designer.cs">
+      <DependentUpon>Book_Issue_and_Return_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerButton.designer.cs">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry Register.Designer.cs">
+      <DependentUpon>Entry Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Transaction Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book Transaction Record.Designer.cs">
+      <DependentUpon>Book Transaction Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exercise1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercise1.Designer.cs">
+      <DependentUpon>Exercise1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarydbDataSet.cs">
+      <DependentUpon>LibrarydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarydbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarydbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarydbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarydbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="library_class.cs" />
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Page.Designer.cs">
+      <DependentUpon>Home_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue book.Designer.cs">
+      <DependentUpon>Issue book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="return_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="return_Book.Designer.cs">
+      <DependentUpon>return_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Info.Designer.cs">
+      <DependentUpon>Student Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Book Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Book Details.Designer.cs">
+      <DependentUpon>Update Book Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Student Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Student Details.Designer.cs">
+      <DependentUpon>Update Student Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Book.resx">
+      <DependentUpon>Add Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Students.resx">
+      <DependentUpon>Add Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Info.resx">
+      <DependentUpon>Book Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Issue_and_Return_Register.resx">
+      <DependentUpon>Book_Issue_and_Return_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerButton.resx">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Transaction Record.resx">
+      <DependentUpon>Book Transaction Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry Register.resx">
+      <DependentUpon>Entry Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercise1.resx">
+      <DependentUpon>Exercise1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Page.resx">
+      <DependentUpon>Home_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue book.resx">
+      <DependentUpon>Issue book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="return_Book.resx">
+      <DependentUpon>return_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Info.resx">
+      <DependentUpon>Student Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Book Details.resx">
+      <DependentUpon>Update Book Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Student Details.resx">
+      <DependentUpon>Update Student Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LibrarydbDataSet.xsc">
+      <DependentUpon>LibrarydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarydbDataSet.xss">
+      <DependentUpon>LibrarydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarydbDataSet1.xsc">
+      <DependentUpon>LibrarydbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarydbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarydbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarydbDataSet1.xss">
+      <DependentUpon>LibrarydbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarydbDataSet2.xsc">
+      <DependentUpon>LibrarydbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarydbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarydbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarydbDataSet2.xss">
+      <DependentUpon>LibrarydbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
